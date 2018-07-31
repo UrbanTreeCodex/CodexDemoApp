@@ -5,9 +5,13 @@ var HDWalletProvider = require('truffle-hdwallet-provider');
 module.exports = {
   migrations_directory: './migrations',
   networks: {
-    development: {
+    localhost: {
       provider: new Web3.providers.HttpProvider('http://localhost:8545'),
       network_id: '*' // Match any network id
+    },
+    development: {
+        provider: new Web3.providers.HttpProvider('http://ec2-18-222-231-169.us-east-2.compute.amazonaws.com:8545'),
+        network_id: '*' // Match any network id
     },
     // Providers using HDWallet need to be wrapped in a function: https://truffleframework.com/docs/advanced/configuration#providers
     rinkeby: {

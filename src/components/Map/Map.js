@@ -1,6 +1,6 @@
 /* global window */
 import React, { Component, Children } from 'react';
-import MapGL, { Marker, Popup, NavigationControl } from 'react-map-gl';
+import ReactMapGL, { Marker, Popup, NavigationControl } from 'react-map-gl';
 
 import TreePin from './TreePin';
 import TreeInfo from './TreeInfo';
@@ -89,7 +89,7 @@ export default class App extends Component {
     const { viewport } = this.state;
 
     return (
-      <MapGL
+      <ReactMapGL
         {...viewport}
         mapStyle="mapbox://styles/mapbox/dark-v9"
         onViewportChange={this._updateViewport}
@@ -105,7 +105,7 @@ export default class App extends Component {
         </div>
 
         {this.props.children}
-      </MapGL>
+      </ReactMapGL>
     );
   }
 }
