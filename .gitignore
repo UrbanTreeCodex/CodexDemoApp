@@ -61,5 +61,4 @@ typings/
 .next
 
 .idea/
-build/contracts/
 src/contracts/
