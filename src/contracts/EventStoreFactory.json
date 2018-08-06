@@ -1911,6 +1911,43 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
+    "77777": {
+      "events": {
+        "0x4c7900e30963aa4aed068e34036112a44f45ef40623e8892337b84316e5fcb64": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "bytes32"
+            }
+          ],
+          "name": "TransmuteEvent",
+          "type": "event"
+        }
+      },
+      "links": {
+        "EventStoreLib": "0x4e72770760c011647d4873f60a3cf6cdea896cd8",
+        "EventStore": "0xbaaa2a3237035a2c7fa2a33c76b44a8c6fe18e87"
+      },
+      "address": "0x13274fe19c0178208bcbee397af8167a7be27f6f",
+      "transactionHash": "0x476a79572b3e4503a552522e553b5994aefde510f4504c43b946a1a8b6dab75f"
+    },
     "1532378320954": {
       "events": {
         "0x4c7900e30963aa4aed068e34036112a44f45ef40623e8892337b84316e5fcb64": {
@@ -2209,5 +2246,5 @@
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-03T18:54:22.549Z"
+  "updatedAt": "2018-08-06T15:38:07.257Z"
 }
