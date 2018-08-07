@@ -1,6 +1,6 @@
 const defaultEnv = require('./env.json');
 
-let TRANSMUTE_ENV = process.env.TRANSMUTE_ENV || 'localhost';
+let TRANSMUTE_ENV = process.env.TRANSMUTE_ENV || 'development';
 
 // // always use infura in production
 // if (typeof window !== 'undefined' && window.location.host === 'or13.github.io') {
