@@ -58,7 +58,7 @@ class Index extends React.Component {
     upload = () => {
         const reader = new FileReader();
         reader.onloadend = () => {
-            const ipfs = ipfsAPI('ec2-18-222-231-169.us-east-2.compute.amazonaws.com', 5001);   // Connect to IPFS
+            const ipfs = ipfsAPI('ec2-18-222-231-169.us-east-2.compute.amazonaws.com', 443);   // Connect to IPFS
             const buf = Buffer(reader.result); // Convert data into buffer
             ipfs.files.add(buf, (err, result) => {
                 // Upload buffer to IPFS
